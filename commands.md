@@ -28,3 +28,16 @@ $ kubectl delete -f deployment.yaml
 
 # ConfigMap
 
+課題：replicaset や deployment から configMap を読み込む
+
+# secret
+
+```
+// encode
+$ echo -n 'admin' | base64
+// 結果 → YWRtaW4=
+
+// decode
+$ echo -n 'YWRtaW4=' | base64 --decode
+// 結果 → admin
+```
